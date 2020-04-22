@@ -1,0 +1,25 @@
+@mixin reset-ul() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin set-PT-Mono() {
+  font-family: "PTMono", "Times New Roman", serif;
+  font-weight: normal;
+}
+
+@mixin set-Roboto() {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+@mixin set-Roboto-Condensed() {
+  font-family: "Roboto-Condensed-Normal", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+@mixin set-Roboto-Condensed-Bold() {
+  font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
+  font-weight: bold;
+}
