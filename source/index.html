@@ -4,31 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
   <title>Smart Device</title>
   <link rel="preload" href="fonts/ptmono.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Condensed.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
-<!--  <link href="pixelPerfect/pixel-glass/styles.css" rel="stylesheet">-->
-<!--  <link href="pixelPerfect/index.css" rel="stylesheet">-->
-<!--  <script src="pixelPerfect/pixel-glass/script.js"></script>-->
-<!--   // Picturefill -->
-<!--  <script>-->
-<!--    // Picture element HTML5 shiv-->
-<!--    document.createElement("picture");-->
-<!--  </script>-->
-<!--  <script src="js/picturefill.min.js" async=""></script>-->
-<!--  &lt;!&ndash; // Picturefill &ndash;&gt;-->
-<!--  &lt;!&ndash; // Polyfill &ndash;&gt;-->
-<!--&lt;!&ndash;  <script src="js/svg4everybody.min.js"></script>&ndash;&gt;-->
-<!--&lt;!&ndash;  <script>svg4everybody(); // run it now or whenever you are ready</script>&ndash;&gt;-->
-<!--&lt;!&ndash;  &lt;!&ndash; // Polyfill &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;  <link rel="stylesheet" href="css/style.min.css">&ndash;&gt;-->
+  <link href="pixelPerfect/pixel-glass/styles.css" rel="stylesheet">
+  <link href="pixelPerfect/index.css" rel="stylesheet">
+  <script src="pixelPerfect/pixel-glass/script.js"></script>
+  <!--   // Picturefill -->
+  <!--  <script>-->
+  <!--    // Picture element HTML5 shiv-->
+  <!--    document.createElement("picture");-->
+  <!--  </script>-->
+  <!--  <script src="js/picturefill.min.js" async=""></script>-->
+  <!--  &lt;!&ndash; // Picturefill &ndash;&gt;-->
+  <!--  &lt;!&ndash; // Polyfill &ndash;&gt;-->
+  <!--&lt;!&ndash;  <script src="js/svg4everybody.min.js"></script>&ndash;&gt;-->
+  <!--&lt;!&ndash;  <script>svg4everybody(); // run it now or whenever you are ready</script>&ndash;&gt;-->
+  <!--&lt;!&ndash;  &lt;!&ndash; // Polyfill &ndash;&gt;&ndash;&gt;-->
+  <!--&lt;!&ndash;  <link rel="stylesheet" href="css/style.min.css">&ndash;&gt;-->
 </head>
-<body>
+<body class="body">
+<div style="display: none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
 <header class="page-header">
+  <nav class="main-nav">
+    <div class="main-nav__logo logo">
+      <a class="logo__link">
+        <svg width="52" height="52">
+          <use xlink:href="#icon-logo"></use>
+        </svg>
+      </a>
+      <div class="logo__desc">
+        <h2>Smart Device</h2>
+        <p>умные технологии</p>
+      </div>
+    </div>
+    <div class="main-nav__contact contact-header">
+      <a class="contact-header__link contact-header__link--mail" href="mailto:info@sd.ru"><span>info@sd.ru</span></a>
+      <a class="contact-header__link contact-header__link--phone" href="tel:+74950005252"><span>+7 (495) 000 52 52</span></a>
+      <button class="btn btn-header" type="button">Заказать звонок</button>
+    </div>
+  </nav>
+  <section class="site-description">
+    <div class="site-description__container">
+      <div class="site-description__info">
+        <h1>Печатные платы</h1>
+        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <button class="btn site-description__btn" data-user="бесплатная консультация"><span>Получить бесплатную консультацию</span></button>
+      </div>
+      <div class="site-description__banner">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/circuit-mobile@1x.webp 1x, img/circuit-mobile@2x.webp 2x " type="image/webp">
+          <source media="(max-width: 1023px)" srcset="img/circuit-tablet@1x.webp 1x, img/circuit-tablet@2x.webp 2x" type="image/webp">
+          <source srcset="img/circuit-desktop@1x.webp 1x, img/circuit-desktop@2x.webp 2x " type="image/webp">
+          <img src="img/circuit-desktop@1x.png" srcset="img/circuit-desktop@2x.png 2x" width="705" height="515" alt="Печатная плата">
+        </picture>
 
+      </div>
+    </div>
+  </section>
+  <a class="page-header__scroll" href="#about">Скролл вниз</a>
 </header>
+<main>
+  <section class="about" id="about">
+    <div class="about__container">
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages__container">
+          <ul class="advantages__list">
+            <li class="advantages__list--item">
+              <svg width="29" height="35">
+                <use xlink:href="#icon-stopwatch"></use>
+              </svg>
+              <h3>Оперативные сроки </h3>
+              <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+            </li>
+            <li class="advantages__list--item">
+              <svg width="35" height="35">
+                <use xlink:href="#icon-hired"></use>
+              </svg>
+              <h3>Крупные поставщики</h3>
+              <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
+              </p>
+            </li>
+            <li class="advantages__list--item">
+              <svg width="36" height="34">
+                <use xlink:href="#icon-detective"></use>
+              </svg>
+              <h3>Полная конфиденциальность</h3>
+              <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+            </li>
+            <li class="advantages__list--item">
+              <svg width="35" height="35">
+                <use xlink:href="#icon-tag"></use>
+              </svg>
+              <h3>Персонализация стоимости</h3>
+              <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="about__content">
+        <h2>О компании</h2>
+        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года.
+          Выполняем срочные заказы и пилотные образцы до 10 дней.
+        </p>
+        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+          Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span>..</span><span>(РЖД),
+            РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
+        </p>
+        <a class="about__link btn" href="#">Подробнее</a>
+      </div>
+
+    </div>
+  </section>
+</main>
 </body>
 </html>

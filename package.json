@@ -32,7 +32,8 @@
     "start": "gulp start",
     "webp": "gulp webp",
     "sprite": "gulp sprite",
-    "pixel": "gulp pixelGlass"
+    "pixel": "gulp pixelGlass",
+    "images": "gulp images"
   },
   "browserslist": [
     "last 2 versions",
