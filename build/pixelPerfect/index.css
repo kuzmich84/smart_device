@@ -1,0 +1,24 @@
+HTML {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  /* По умолчанию мобильный макет */
+  background-image: url("img/smart-device-mobile.jpg");
+}
+/* Планшет */
+@media (min-width: 768px) {
+  HTML {
+    /* Планшетный макет */
+    background-image: url("img/smart-device-tablet.jpg");
+  }
+}
+/* Десктоп */
+@media (min-width: 1024px) {
+  HTML {
+    /* Десктопный макет */
+    background-image: url("img/smart-device-desktop.jpg");
+  }
+}
+
+BODY {
+  opacity: 0.5;
+}
