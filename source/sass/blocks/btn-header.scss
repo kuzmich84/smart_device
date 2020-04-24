@@ -1,0 +1,16 @@
+.btn-header {
+  color: #ffffff;
+  padding: 14px 27px 12px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #00b2ff;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .btn-header {
+    display: none;
+  }
+}
+

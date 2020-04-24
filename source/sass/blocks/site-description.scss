@@ -1,0 +1,213 @@
+.site-description {
+  overflow: hidden;
+}
+
+.site-description__container {
+  padding-top: 230px;
+  max-width: 1470px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 274px;
+}
+
+.site-description__info {
+  padding: 0 25px;
+  width: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+.site-description__info h1 {
+  @include set-Roboto-Condensed-Bold();
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.site-description__info p {
+  @include set-PT-Mono();
+  font-style: normal;
+  font-size: 22px;
+  line-height: 34px;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 97px;
+  margin-bottom: 44px;
+  padding-right: 2%;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 17px;
+    left: -97px;
+  }
+}
+
+.site-description__btn {
+  @include set-Roboto-Condensed-Bold();
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #00b2ff;
+  border: 1px solid #00b2ff;
+  color: #ffffff;
+  padding: 18px 45px 16px 45px;
+  margin-left: 97px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+  }
+}
+
+.site-description__banner {
+  position: absolute;
+  left: 813px;
+  top: 173px;
+  width: 705px;
+  background-image: url("../img/bg-triangle@1x.png");
+  background-repeat: no-repeat;
+  background-position: 9px -2px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-triangle@2x.png");
+    background-size: 630px auto;
+  }
+}
+
+.site-description__banner img {
+  height: auto;
+  width: 705px;
+}
+
+@media (max-width: $tablet-width) {
+  .site-description__container {
+    padding-top: 115px;
+    padding-bottom: 164px;
+  }
+
+  .site-description__info {
+    padding-left: 87px;
+    padding-right: 0;
+    width: 535px;
+  }
+
+  .site-description__info h1 {
+    font-size: 60px;
+    line-height: 70px;
+    padding-bottom: 11px;
+  }
+
+  .site-description__info p {
+    font-size: 18px;
+    line-height: 156.8%;
+    min-width: 475px;
+    margin-left: 51px;
+    margin-bottom: 54px;
+
+    &::before {
+      width: 33px;
+      top: 16px;
+      left: -48px;
+    }
+  }
+
+  .site-description__btn {
+    padding-right: 31px;
+    padding-left: 31px;
+    margin-left: 51px;
+  }
+
+  .site-description__banner {
+    left: 446px;
+    top: 2px;
+    width: 500px;
+    height: 400px;
+    background-image: url("../img/bg-triangle-tablet@1x.png");
+    background-position: 9px -2px;
+  }
+
+  .site-description__banner img {
+    width: 465px;
+    padding-top: 38px;
+    padding-left: 63px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .site-description__info h1 {
+    font-size: 40px;
+    line-height: 47px;
+    width: 60%;
+  }
+
+  .site-description__info {
+    padding-left: 15px;
+    width: 91%;
+  }
+
+  .site-description__container {
+    padding-top: 231px;
+    padding-bottom: 72px;
+  }
+
+  .site-description__info p {
+    font-size: 16px;
+    min-width: 270px;
+    margin-bottom: 41px;
+    padding-right: 20%;
+  }
+
+  .site-description__btn span {
+    display: none;
+  }
+
+  .site-description__btn {
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-left: 3px;
+
+    &::before {
+      @include set-Roboto-Condensed-Bold();
+      content: attr(data-user);
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+
+  .site-description__banner {
+    left: auto;
+    right: -180px;
+    top: 6px;
+    width: 500px;
+    height: 400px;
+    background-image: url("../img/bg-triangle-mobile@1x.png");
+    background-position: 158px -2px;
+  }
+
+  .site-description__banner img {
+    width: 294px;
+    padding-left: 26px;
+    padding-top: 31px;
+  }
+
+}

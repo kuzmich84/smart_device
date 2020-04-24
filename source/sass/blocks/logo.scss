@@ -1,0 +1,43 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__desc h2 {
+  @include set-Roboto-Condensed-Bold();
+  font-size: 25px;
+  line-height: 29px;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.logo__desc p {
+  @include set-Roboto();
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+  padding: 0;
+  margin: 0;
+}
+
+.logo__link {
+  display: flex;
+}
+
+.logo__link svg {
+  padding-right: 15px;
+}
+
+@media (max-width: $mobile-width) {
+  .logo__link svg {
+    padding-right: 15px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo__desc {
+    display: none;
+  }
+}

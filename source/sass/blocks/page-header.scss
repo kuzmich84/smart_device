@@ -1,0 +1,44 @@
+.page-header {
+  background-color: #1b2d37;
+  background-image: url("../img/bg-back-desktop@1x.png");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-top: 33px;
+  position: relative;
+}
+
+.page-header__scroll {
+  @include set-PT-Mono();
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 126px;
+  left: 11.2%;
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    padding-top: 21px;
+  }
+
+  .page-header__scroll {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    padding-top: 17px;
+  }
+}
