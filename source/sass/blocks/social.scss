@@ -1,0 +1,17 @@
+.social__list {
+  @include reset-ul();
+  display: flex;
+}
+
+.social__item {
+  margin-right: 15px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}

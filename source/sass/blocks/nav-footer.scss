@@ -1,0 +1,26 @@
+.nav-footer__list {
+  @include reset-ul();
+  column-count: 2;
+}
+
+.nav-footer__item {
+  margin-right: 57px;
+}
+
+.nav-footer__link {
+  @include set-PT-Mono();
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b2d37;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .nav-footer__list {
+    column-count: 1;
+  }
+}
