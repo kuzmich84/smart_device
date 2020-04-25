@@ -1,0 +1,271 @@
+.feedback {
+  background-color: #00b2ff;
+  background-image: url("../img/bg-feedback.svg");
+  background-repeat: no-repeat;
+  background-position: 175px -60px;
+  background-size: auto auto;
+}
+
+.feedback__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 91px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.feedback__form-content h3 {
+  @include set-Roboto-Condensed();
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.feedback__form-content p {
+  @include set-PT-Mono();
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 2px;
+  margin-bottom: 50px;
+}
+
+.feedback__form-content {
+  margin-left: auto;
+  max-width: 573px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/airplane-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 511px auto;
+    top: 15%;
+    left: -108.5%;
+  }
+}
+
+.feedback__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include set-PT-Mono();
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.feedback__form input,
+.feedback__form textarea {
+  background-color: #19baff;
+  box-sizing: border-box;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 14px;
+  color: #ffffff;
+}
+
+.feedback__input::placeholder,
+.feedback__form textarea::placeholder {
+  @include set-PT-Mono();
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.feedback__form textarea {
+  width: 100%;
+  min-height: 154px;
+  margin-bottom: 46px;
+  padding-top: 12px;
+}
+
+.feedback__input {
+  width: calc(50% - 15px);
+  margin-bottom: 40px;
+}
+
+.feedback__btn {
+  color: #ffffff;
+  padding: 13.5px 0;
+  margin-left: 2px;
+  margin-right: 70px;
+  min-width: 270px;
+}
+
+.feedback__submit {
+  display: flex;
+  align-items: center;
+}
+
+.feedback__submit label {
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  opacity: 0.8;
+}
+
+.feedback__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.feedback__custom-checkbox {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  top: 3px;
+  left: -30px;
+}
+
+.feedback__checkbox:checked + .feedback__custom-checkbox {
+  background-image: url("../img/icon-yes.svg");
+  background-size: 7.5px 4.5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: $tablet-width) {
+  .feedback {
+    background-image: none;
+  }
+
+  .feedback__form-content {
+    max-width: none;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .feedback__form-content h3 {
+    font-size: 32px;
+    line-height: 140.62%;
+    margin-bottom: 17px;
+  }
+
+  .feedback__container {
+    padding-top: 79px;
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+
+  .feedback__form-content p {
+    margin-bottom: 54px;
+    margin-left: 3px;
+  }
+
+  .feedback__form input,
+  .feedback__form textarea {
+    padding-bottom: 17px;
+  }
+
+  .feedback__form input {
+    padding: 13px 14px 16px 20px;
+    min-height: 52px;
+  }
+
+  .feedback__form textarea {
+    min-height: 162px;
+    margin-bottom: 43px;
+  }
+
+  .feedback__btn {
+    min-width: 280px;
+    padding: 14px 0;
+  }
+
+  .feedback__custom-checkbox {
+    width: 17px;
+    top: 1px;
+    left: -34px;
+  }
+
+  .feedback__input {
+    width: calc(50% - 16px);
+  }
+
+  .feedback__submit label {
+    margin-left: 4px;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .feedback__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .feedback__form {
+    flex-direction: column;
+  }
+
+  .feedback__input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .feedback__form-content h3 {
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-bottom: 12px;
+  }
+
+  .feedback__form-content p {
+    margin-left: 0;
+    margin-bottom: 27px;
+  }
+
+  .feedback__submit {
+    flex-direction: column;
+  }
+
+  .feedback__form input {
+    padding: 12px 14px 16px 17px;
+    min-height: 52px;
+  }
+
+  .feedback__form textarea {
+    padding: 12px 14px 16px 17px;
+    min-height: 104px;
+    margin-bottom: 30px;
+  }
+
+  .feedback__btn {
+    min-width: 0;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 31px;
+  }
+
+  .feedback__submit label {
+    margin-left: 34px;
+  }
+
+  .feedback__custom-checkbox {
+    top: 1px;
+    left: -34px;
+  }
+}
