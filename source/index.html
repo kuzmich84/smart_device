@@ -114,7 +114,7 @@
           Выполняем срочные заказы и пилотные образцы до 10 дней.
         </p>
         <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-          Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог <span>..</span><span>(РЖД),
+          Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span>..</span> <span>(РЖД),
             РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
         </p>
         <a class="about__link btn" href="#">Подробнее</a>
@@ -128,24 +128,51 @@
         <a class="products__link" data-product="Производство &#10;печатных плат" href="#">
           <div class="products__arrow"></div>
           <picture>
-            <source srcset="img/product-1-desktop@1x.webp 1x, img/product-1-desktop@1x.webp 2x " type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/product-1-mobile@1x.webp 1x, img/product-1-mobile@2x.webp 2x " type="image/webp">
+            <source media="(max-width: 1023px)" srcset="img/product-1-tablet@1x.webp 1x, img/product-1-tablet@2x.webp 2x " type="image/webp">
+            <source srcset="img/product-1-desktop@1x.webp 1x, img/product-1-desktop@2x.webp 2x " type="image/webp">
             <img src="img/product-1-desktop@1x.jpg" srcset="img/product-1-desktop@2x.jpg 2x" width="370" height="620" alt="Производство  печатных плат">
           </picture>
         </a>
-        <a class="products__link"  data-product="Монтаж печатных &#10;плат"  href="#">
+        <a class="products__link" data-product="Монтаж печатных &#10;плат" href="#">
           <div class="products__arrow"></div>
-            <picture>
-              <source srcset="img/product-2-desktop@1x.webp 1x, img/product-2-desktop@1x.webp 2x " type="image/webp">
-              <img src="img/product-2-desktop@1x.jpg" srcset="img/product-2-desktop@2x.jpg 2x" width="370" height="620" alt="Производство  печатных плат">
-            </picture>
-          </a>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/product-2-mobile@1x.webp 1x, img/product-2-mobile@2x.webp 2x " type="image/webp">
+            <source media="(max-width: 1023px)" srcset="img/product-2-tablet@1x.webp 1x, img/product-2-tablet@2x.webp 2x " type="image/webp">
+            <source srcset="img/product-2-desktop@1x.webp 1x, img/product-2-desktop@1x.webp 2x " type="image/webp">
+            <img src="img/product-2-desktop@1x.jpg" srcset="img/product-2-desktop@2x.jpg 2x" width="370" height="620" alt="Производство  печатных плат">
+          </picture>
+        </a>
         <a class="products__link" data-product="Комплектующие &#10;для светотехники" href="#">
           <div class="products__arrow"></div>
-        <picture>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/product-3-mobile@1x.webp 1x, img/product-3-mobile@2x.webp 2x " type="image/webp">
+            <source media="(max-width: 1023px)" srcset="img/product-3-tablet@1x.webp 1x, img/product-3-tablet@2x.webp 2x " type="image/webp">
             <source srcset="img/product-3-desktop@1x.webp 1x, img/product-3-desktop@1x.webp 2x " type="image/webp">
             <img src="img/product-3-desktop@1x.jpg" srcset="img/product-3-desktop@2x.jpg 2x" width="370" height="620" alt="Производство  печатных плат">
           </picture>
         </a>
+      </div>
+    </div>
+  </section>
+  <section class="feedback">
+    <div class="feedback__container">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <div class="feedback__form-content">
+        <h3>Остались вопросы? Задайте их нам!</h3>
+        <p>Мы проконсультируем Вас бесплатно</p>
+        <form class="feedback__form" action="#" method="post">
+          <label class="visually-hidden" for="name"> </label> <input class="feedback__input feedback__input--name" id="name" name="name" type="text" placeholder="Имя" required>
+          <label class="visually-hidden" for="phone"></label> <input class="feedback__input feedback__input--phone" id="phone" name="phone" type="tel" placeholder="Телефон" required>
+          <textarea name="message" id="message" placeholder="Ваш вопрос" required></textarea>
+          <div class="feedback__submit">
+            <button class="btn feedback__btn" type="submit">Задать вопрос</button>
+            <label><input class="feedback__checkbox" type="checkbox" name="confidential" checked>
+              <span class="feedback__custom-checkbox"></span>
+              <span class="feedback__label-conf">Я согласен на обработку  персональных данных</span>
+            </label>
+          </div>
+        </form>
       </div>
     </div>
   </section>
