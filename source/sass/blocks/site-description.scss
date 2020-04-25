@@ -7,7 +7,7 @@
   max-width: 1470px;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 274px;
+  padding-bottom: 292px;
 }
 
 .site-description__info {
@@ -41,7 +41,7 @@
   display: flex;
   justify-content: space-between;
   margin-left: 97px;
-  margin-bottom: 44px;
+  margin-bottom: 62px;
   padding-right: 2%;
 
   &::before {
@@ -98,7 +98,7 @@
 @media (max-width: $tablet-width) {
   .site-description__container {
     padding-top: 115px;
-    padding-bottom: 164px;
+    padding-bottom: 179px;
   }
 
   .site-description__info {
@@ -118,7 +118,7 @@
     line-height: 156.8%;
     min-width: 475px;
     margin-left: 51px;
-    margin-bottom: 54px;
+    margin-bottom: 74px;
 
     &::before {
       width: 33px;
@@ -163,13 +163,13 @@
 
   .site-description__container {
     padding-top: 231px;
-    padding-bottom: 72px;
+    padding-bottom: 87px;
   }
 
   .site-description__info p {
     font-size: 16px;
     min-width: 270px;
-    margin-bottom: 41px;
+    margin-bottom: 62px;
     padding-right: 20%;
   }
 
