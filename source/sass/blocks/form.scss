@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include set-PT-Mono();
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form input,
+.form textarea {
+  background-color: #19baff;
+  box-sizing: border-box;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 14px;
+  color: #ffffff;
+}
+
+.form textarea::placeholder {
+  @include set-PT-Mono();
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 154px;
+  margin-bottom: 46px;
+  padding-top: 12px;
+}

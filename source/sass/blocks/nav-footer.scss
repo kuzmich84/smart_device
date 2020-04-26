@@ -24,3 +24,14 @@
     column-count: 1;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .nav-footer__list {
+    display: none;
+    margin-bottom: 22px;
+  }
+
+  .nav-footer__list--opened {
+    display: block;
+  }
+}
