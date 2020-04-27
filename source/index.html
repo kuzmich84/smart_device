@@ -55,7 +55,7 @@
       <div class="site-description__info">
         <h1>Печатные платы</h1>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="btn site-description__btn" data-user="бесплатная консультация"><span>Получить бесплатную консультацию</span></a>
+        <a class="btn site-description__btn" href="#feedback" data-user="бесплатная консультация"><span>Получить бесплатную консультацию</span></a>
       </div>
       <div class="site-description__banner">
         <picture>
@@ -65,9 +65,9 @@
           <img src="img/circuit-desktop@1x.png" srcset="img/circuit-desktop@2x.png 2x" width="705" height="515" alt="Печатная плата">
         </picture>
       </div>
+      <a class="page-header__scroll" href="#about">Скролл вниз</a>
     </div>
   </section>
-  <a class="page-header__scroll" href="#about">Скролл вниз</a>
 </header>
 <main>
   <section class="about" id="about">
@@ -155,7 +155,7 @@
       </div>
     </div>
   </section>
-  <section class="feedback">
+  <section class="feedback" id="feedback">
     <div class="feedback__container">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <div class="feedback__form-content">
@@ -163,7 +163,7 @@
         <p>Мы проконсультируем Вас бесплатно</p>
         <form class="form" action="#" method="post">
           <label class="visually-hidden" for="name"> </label> <input class="feedback__input feedback__input--name" id="name" name="name" type="text" placeholder="Имя" required>
-          <label class="visually-hidden" for="phone"></label> <input class="feedback__input feedback__input--phone" id="phone" name="phone" type="tel" placeholder="Телефон" required>
+          <label class="visually-hidden" for="phone"></label> <input class="feedback__input feedback__input--phone" id="phone" name="phone" type="tel" placeholder="Телефон" pattern="[+]7[0-9]{10,}" required>
           <textarea name="message" id="message" placeholder="Ваш вопрос" required></textarea>
           <div class="feedback__submit form-submit">
             <button class="btn form__btn" type="submit">Задать вопрос</button>
@@ -189,7 +189,7 @@
             </svg>
           </a>
           <div class="logo-footer__desc logo__desc">
-            <h2>Smart Device</h2>
+            <h2>Service Device</h2>
             <p>умные технологии</p>
           </div>
         </div>
@@ -270,11 +270,11 @@
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="form" action="#" method="post">
       <label class="visually-hidden" for="name"> </label> <input class="call-popup__input" id="call-name" name="name" type="text" placeholder="Имя" required>
-      <label class="visually-hidden" for="phone"></label> <input class="call-popup__input" id="call-phone" name="phone" type="tel" placeholder="Телефон" required>
+      <label class="visually-hidden" for="phone"></label> <input class="call-popup__input" id="call-phone" name="phone" type="tel" placeholder="Телефон" pattern="[+]7[0-9]{10,}" required>
       <textarea name="message" id="call-message" placeholder="Ваш вопрос" required></textarea>
       <div class="call-popup__submit form-submit">
         <button class="btn form__btn" type="submit">Отправить</button>
-        <label class="call-popup__label"><input class="form__checkbox" type="checkbox" name="confidential" checked>
+        <label class="call-popup__label"><input class="form__checkbox" type="checkbox" name="confidential" required checked>
           <span class="form__custom-checkbox"></span>
           <span class="form__label-conf">Я согласен на обработку  персональных данных</span>
         </label>
@@ -282,6 +282,7 @@
     </form>
   </div>
 </section>
+<script src="js/imask.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

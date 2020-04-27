@@ -83,6 +83,10 @@
   background-repeat: no-repeat;
 }
 
+.products__link:hover .products__arrow {
+  opacity: 0.6;
+}
+
 .products__link:hover::before {
   background-color: rgba(27, 45, 55, 0.9);
   cursor: pointer;
@@ -120,7 +124,7 @@
     padding-top: 51px;
     padding-bottom: 35px;
     padding-right: 24px;
-    padding-left: 24px ;
+    padding-left: 24px;
   }
 
   .products__arrow {
