@@ -165,11 +165,11 @@
           <label class="visually-hidden" for="name"> </label> <input class="feedback__input feedback__input--name" id="name" name="name" type="text" placeholder="Имя" required>
           <label class="visually-hidden" for="phone"></label> <input class="feedback__input feedback__input--phone" id="phone" name="phone" type="tel" placeholder="Телефон" required>
           <textarea name="message" id="message" placeholder="Ваш вопрос" required></textarea>
-          <div class="feedback__submit">
-            <button class="btn feedback__btn" type="submit">Задать вопрос</button>
-            <label><input class="feedback__checkbox" type="checkbox" name="confidential" checked>
-              <span class="feedback__custom-checkbox"></span>
-              <span class="feedback__label-conf">Я согласен на обработку  персональных данных</span>
+          <div class="feedback__submit form-submit">
+            <button class="btn form__btn" type="submit">Задать вопрос</button>
+            <label><input class="form__checkbox" type="checkbox" name="confidential" checked>
+              <span class="form__custom-checkbox"></span>
+              <span class="form__label-conf">Я согласен на обработку  персональных данных</span>
             </label>
           </div>
         </form>
@@ -257,25 +257,31 @@
   </div>
   </div>
 </footer>
-
+<div class="overlay"></div>
 <section class="call-popup">
   <div class="call-popup__container">
+    <button type="button" class="call-popup__btn btn">
+      <svg width="16.56" height="16.56">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+      <span class="visually-hidden">Закрыть</span>
+    </button>
     <h2>Закажите звонок</h2>
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-    <form class="feedback__form" action="#" method="post">
-      <label class="visually-hidden" for="call-name"> </label> <input class="feedback__input feedback__input--name" id="call-name" name="name" type="text" placeholder="Имя" required>
-      <label class="visually-hidden" for="call-phone"></label> <input class="feedback__input feedback__input--phone" id="call-phone" name="phone" type="tel" placeholder="Телефон" required>
+    <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <form class="form" action="#" method="post">
+      <label class="visually-hidden" for="name"> </label> <input class="call-popup__input" id="call-name" name="name" type="text" placeholder="Имя" required>
+      <label class="visually-hidden" for="phone"></label> <input class="call-popup__input" id="call-phone" name="phone" type="tel" placeholder="Телефон" required>
       <textarea name="message" id="call-message" placeholder="Ваш вопрос" required></textarea>
-      <div class="feedback__submit">
-        <button class="btn feedback__btn" type="submit">Задать вопрос</button>
-        <label><input class="feedback__checkbox" type="checkbox" name="confidential" checked>
-          <span class="feedback__custom-checkbox"></span>
-          <span class="feedback__label-conf">Я согласен на обработку  персональных данных</span>
+      <div class="call-popup__submit form-submit">
+        <button class="btn form__btn" type="submit">Отправить</button>
+        <label class="call-popup__label"><input class="form__checkbox" type="checkbox" name="confidential" checked>
+          <span class="form__custom-checkbox"></span>
+          <span class="form__label-conf">Я согласен на обработку  персональных данных</span>
         </label>
       </div>
     </form>
-
   </div>
 </section>
+<script src="js/main.js"></script>
 </body>
 </html>
