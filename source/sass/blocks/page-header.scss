@@ -15,15 +15,21 @@
   background-image: url("../img/bg-back-desktop@1x.png");
 }
 
+.no-js .page-header {
+  background-image: url("../img/bg-back-desktop@1x.png");
+}
+
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .webp .page-header {
     background-image: url("../img/bg-back-desktop@2x.webp");
-    background-size: 1920px;
   }
 
   .no-webp .page-header {
     background-image: url("../img/bg-back-desktop@2x.png");
-    background-size: 1920px;
+  }
+
+  .no-js .page-header {
+    background-image: url("../img/bg-back-desktop@2x.png");
   }
 }
 

@@ -99,7 +99,7 @@ gulp.task('copy', function () {
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
     'source/js/main.js',
-    'source/js/modernizr-custom.js',
+    'source/js/modernizr-webp.js',
     'source//*.ico',
   ], {
     base: 'source',

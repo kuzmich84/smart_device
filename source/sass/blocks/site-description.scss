@@ -84,6 +84,11 @@
   background-position: 9px -2px;
 }
 
+.no-js .site-description__banner {
+  background-image: url("../img/bg-triangle@1x.png");
+}
+
+
 .no-webp .site-description__banner {
   background-image: url("../img/bg-triangle@1x.png");
 }
@@ -94,6 +99,11 @@
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .no-webp .site-description__banner {
+    background-image: url("../img/bg-triangle@2x.png");
+    background-size: 631px;
+  }
+
+  .no-js .site-description__banner {
     background-image: url("../img/bg-triangle@2x.png");
     background-size: 631px;
   }
@@ -159,6 +169,11 @@
     background-image: url("../img/bg-triangle-tablet@1x.png");
   }
 
+  .no-js .site-description__banner {
+    background-image: url("../img/bg-triangle-tablet@1x.png");
+  }
+
+
   .webp .site-description__banner {
     background-image: url("../img/bg-triangle-tablet@1x.webp");
   }
@@ -168,6 +183,12 @@
       background-image: url("../img/bg-triangle-tablet@2x.png");
       background-size: 491px;
     }
+
+    .no-js .site-description__banner {
+      background-image: url("../img/bg-triangle-tablet@2x.png");
+      background-size: 491px;
+    }
+
 
     .webp .site-description__banner {
       background-image: url("../img/bg-triangle-tablet@2x.webp");
@@ -241,12 +262,21 @@
     background-image: url("../img/bg-triangle-mobile@1x.png");
   }
 
+  .no-js .site-description__banner {
+    background-image: url("../img/bg-triangle-mobile@1x.png");
+  }
+
   .webp .site-description__banner {
     background-image: url("../img/bg-triangle-mobile@1x.webp");
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .no-webp .site-description__banner {
+      background-image: url("../img/bg-triangle-mobile@2x.png");
+      background-size: 480px;
+    }
+
+    .no-js .site-description__banner {
       background-image: url("../img/bg-triangle-mobile@2x.png");
       background-size: 480px;
     }

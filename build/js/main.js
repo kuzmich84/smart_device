@@ -13,6 +13,10 @@
   var storageMessage = '';
   var form = popup.querySelector('.form');
   var isStorageSupport = true;
+  var body = document.querySelector('body');
+
+  // no-JS для webP
+  body.classList.remove('no-js');
 
   // модальное окно
 
@@ -24,8 +28,6 @@
   } catch (err) {
     isStorageSupport = false;
   }
-
-  var body = document.querySelector('body');
 
   function closePopup() {
     popup.classList.remove('call-popup-show');
@@ -150,5 +152,4 @@
 
   window.IMask(phone, maskOptions);
   window.IMask(phoneFeedback, maskOptions);
-
 })();

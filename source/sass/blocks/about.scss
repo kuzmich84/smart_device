@@ -66,6 +66,10 @@
   }
 }
 
+.no-js .about__content::before {
+  background-image: url("../img/about-2005-desktop@1x.png");
+}
+
 .webp .about__content::before {
   background-image: url("../img/about-2005-desktop@1x.webp");
 }
@@ -75,6 +79,10 @@
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .no-js .about__content::before {
+    background-image: url("../img/about-2005-desktop@2x.png");
+  }
+
   .webp .about__content::before {
     background-image: url("../img/about-2005-desktop@2x.webp");
     background-size: 220px;
@@ -122,6 +130,11 @@
     background-image: url("../img/about-2005-tablet@1x.png");
   }
 
+  .no-js .about__content::before {
+    background-image: url("../img/about-2005-tablet@1x.png");
+  }
+
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .webp .about__content::before {
       background-image: url("../img/about-2005-tablet@2x.webp");
@@ -132,6 +145,11 @@
       background-image: url("../img/about-2005-tablet@2x.png");
       background-size: 220px;
     }
+
+    .no-js .about__content::before {
+      background-image: url("../img/about-2005-tablet@2x.png");
+    }
+
   }
 
   .about__content h2 {

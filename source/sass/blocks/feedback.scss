@@ -76,10 +76,22 @@
   }
 }
 
+.no-js .feedback__form-content {
+  &::before {
+    background-image: url("../img/airplane-desktop@1x.png");
+  }
+}
 
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .no-webp .feedback__form-content {
+    &::before {
+      background-image: url("../img/airplane-desktop@2x.png");
+      background-size: 511px;
+    }
+  }
+
+  .no-js .feedback__form-content {
     &::before {
       background-image: url("../img/airplane-desktop@2x.png");
       background-size: 511px;
