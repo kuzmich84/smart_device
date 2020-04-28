@@ -124,5 +124,5 @@ gulp.task('js', function () {
 });
 
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js', 'pixelGlass'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js'));
 gulp.task('start', gulp.series('build', 'server'));
