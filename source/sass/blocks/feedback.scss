@@ -57,11 +57,45 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../img/airplane-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: 511px auto;
     top: 15%;
     left: -108.5%;
+  }
+}
+
+.no-webp .feedback__form-content {
+  &::before {
+    background-image: url("../img/airplane-desktop@1x.png");
+  }
+}
+
+.webp .feedback__form-content {
+  &::before {
+    background-image: url("../img/airplane-desktop@1x.webp");
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .page-header__title-wrapper::after {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 258px;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .no-webp .feedback__form-content {
+    &::before {
+      background-image: url("../img/airplane-desktop@2x.png");
+      background-size: 511px;
+    }
+  }
+
+  .webp .feedback__form-content {
+    &::before {
+      background-image: url("../img/airplane-desktop@2x.webp");
+      background-size: 511px;
+    }
   }
 }
 
