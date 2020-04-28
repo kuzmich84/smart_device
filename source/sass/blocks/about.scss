@@ -60,12 +60,32 @@
     position: absolute;
     width: 220px;
     height: 317px;
-    background-image: url("../img/about-2005-desktop@1x.png");
     background-repeat: no-repeat;
     top: 80px;
     left: -30px;
   }
 }
+
+.webp .about__content::before {
+  background-image: url("../img/about-2005-desktop@1x.webp");
+}
+
+.no-webp .about__content::before {
+  background-image: url("../img/about-2005-desktop@1x.png");
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .webp .about__content::before {
+    background-image: url("../img/about-2005-desktop@2x.webp");
+    background-size: 220px;
+  }
+
+  .no-webp .about__content::before {
+    background-image: url("../img/about-2005-desktop@2x.png");
+    background-size: 220px;
+  }
+}
+
 
 .about__content span {
   display: none;
@@ -88,10 +108,29 @@
     margin-bottom: 83px;
 
     &::before {
-      background-image: url("../img/about-2005-tablet@1x.png");
       height: 355px;
       top: 24px;
       left: -25px;
+    }
+  }
+
+  .webp .about__content::before {
+    background-image: url("../img/about-2005-tablet@1x.webp");
+  }
+
+  .no-webp .about__content::before {
+    background-image: url("../img/about-2005-tablet@1x.png");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .webp .about__content::before {
+      background-image: url("../img/about-2005-tablet@2x.webp");
+      background-size: 220px;
+    }
+
+    .no-webp .about__content::before {
+      background-image: url("../img/about-2005-tablet@2x.png");
+      background-size: 220px;
     }
   }
 

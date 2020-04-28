@@ -1,11 +1,30 @@
 .page-header {
   background-color: #1b2d37;
-  background-image: url("../img/bg-back-desktop@1x.png");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: auto;
   padding-top: 33px;
   position: relative;
+}
+
+.webp .page-header {
+  background-image: url("../img/bg-back-desktop@1x.webp");
+}
+
+.no-webp .page-header {
+  background-image: url("../img/bg-back-desktop@1x.png");
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .webp .page-header {
+    background-image: url("../img/bg-back-desktop@2x.webp");
+    background-size: 1920px;
+  }
+
+  .no-webp .page-header {
+    background-image: url("../img/bg-back-desktop@2x.png");
+    background-size: 1920px;
+  }
 }
 
 .page-header__scroll {

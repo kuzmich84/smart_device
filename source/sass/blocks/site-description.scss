@@ -80,13 +80,27 @@
   left: 813px;
   top: 173px;
   width: 705px;
-  background-image: url("../img/bg-triangle@1x.png");
   background-repeat: no-repeat;
   background-position: 9px -2px;
+}
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+.no-webp .site-description__banner {
+  background-image: url("../img/bg-triangle@1x.png");
+}
+
+.webp .site-description__banner {
+  background-image: url("../img/bg-triangle@1x.webp");
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .no-webp .site-description__banner {
     background-image: url("../img/bg-triangle@2x.png");
-    background-size: 630px auto;
+    background-size: 631px;
+  }
+
+  .webp .site-description__banner {
+    background-image: url("../img/bg-triangle@2x.webp");
+    background-size: 631px;
   }
 }
 
@@ -138,9 +152,29 @@
     top: 2px;
     width: 500px;
     height: 400px;
-    background-image: url("../img/bg-triangle-tablet@1x.png");
     background-position: 9px -2px;
   }
+
+  .no-webp .site-description__banner {
+    background-image: url("../img/bg-triangle-tablet@1x.png");
+  }
+
+  .webp .site-description__banner {
+    background-image: url("../img/bg-triangle-tablet@1x.webp");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .no-webp .site-description__banner {
+      background-image: url("../img/bg-triangle-tablet@2x.png");
+      background-size: 491px;
+    }
+
+    .webp .site-description__banner {
+      background-image: url("../img/bg-triangle-tablet@2x.webp");
+      background-size: 491px;
+    }
+  }
+
 
   .site-description__banner img {
     width: 465px;
@@ -200,8 +234,27 @@
     top: 6px;
     width: 500px;
     height: 400px;
-    background-image: url("../img/bg-triangle-mobile@1x.png");
     background-position: 158px -2px;
+  }
+
+  .no-webp .site-description__banner {
+    background-image: url("../img/bg-triangle-mobile@1x.png");
+  }
+
+  .webp .site-description__banner {
+    background-image: url("../img/bg-triangle-mobile@1x.webp");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .no-webp .site-description__banner {
+      background-image: url("../img/bg-triangle-mobile@2x.png");
+      background-size: 480px;
+    }
+
+    .webp .site-description__banner {
+      background-image: url("../img/bg-triangle-mobile@2x.webp");
+      background-size: 480px;
+    }
   }
 
   .site-description__banner img {

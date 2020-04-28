@@ -76,12 +76,7 @@
   }
 }
 
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .page-header__title-wrapper::after {
-    background-image: url("../img/iphone-hand-mobile@2x.png");
-    background-size: 258px;
-  }
-}
+
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .no-webp .feedback__form-content {
