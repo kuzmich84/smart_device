@@ -8,8 +8,8 @@
   line-height: 22px;
 }
 
-.form__input,
-.form__textarea {
+.form input,
+.form textarea {
   background-color: #19baff;
   box-sizing: border-box;
   border: 1px solid transparent;
@@ -22,7 +22,6 @@
 
   &:hover {
     border: 1px solid #ffffff;
-
   }
 
   &:focus {
@@ -30,15 +29,15 @@
   }
 }
 
-.form__textarea::placeholder,
-.form__input::placeholder {
+.form textarea::placeholder,
+.form input::placeholder {
   @include set-PT-Mono();
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form__textarea {
+.form textarea {
   width: 100%;
   min-height: 154px;
   margin-bottom: 46px;
@@ -62,7 +61,7 @@
   min-width: 270px;
 }
 
-.form__checkbox {
+.form-submit input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -70,7 +69,7 @@
   clip: rect(0, 0, 0, 0);
 }
 
-.form__checkbox:checked + .form__custom-checkbox {
+.form-submit input:checked + .form__custom-checkbox {
   background-image: url("../img/icon-yes.svg");
   background-size: 7.5px 4.5px;
   background-repeat: no-repeat;
@@ -96,17 +95,17 @@
 }
 
 @media (max-width: $tablet-width) {
-  .form__input,
-  .form__textarea {
+  .form input,
+  .form textarea {
     padding-bottom: 17px;
   }
 
-  .feedback .form__input {
+  .feedback input {
     padding: 12px 14px 16px 20px;
     min-height: 52px;
   }
 
-  .feedback .form__textarea {
+  .feedback textarea {
     min-height: 162px;
     margin-bottom: 43px;
   }
@@ -122,7 +121,7 @@
     margin-left: -34px;
   }
 
-  .feedback .form__textarea {
+  .feedback textarea {
     margin-bottom: 44px;
     min-height: 163px;
   }
@@ -133,12 +132,12 @@
     flex-direction: column;
   }
 
-  .feedback .form__input {
+  .feedback input {
     padding: 11px 14px 16px 17px;
     min-height: 52px;
   }
 
-  .feedback .form__textarea {
+  .feedback textarea {
     padding: 11px 14px 16px 17px;
     min-height: 104px;
     margin-bottom: 31px;

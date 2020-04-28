@@ -44,9 +44,10 @@
   margin-bottom: 32px;
 }
 
-.call-popup__input {
+.call-popup input {
   width: 100%;
   margin-bottom: 30px;
+  padding: 14px 14px 17px 24px;
 }
 
 .call-popup .form__btn {
@@ -61,11 +62,7 @@
   display: block;
 }
 
-.call-popup .form__input {
-  padding: 14px 14px 17px 24px;
-}
-
-.call-popup .form__textarea {
+.call-popup textarea {
   min-height: 104px;
   padding-top: 14px;
   padding-left: 24px;
