@@ -150,6 +150,6 @@
     mask: '+{7}(000)000-00-00',
   };
 
-  window.IMask(phone, maskOptions);
-  window.IMask(phoneFeedback, maskOptions);
+  window.imaskJS(phone, maskOptions);
+  window.imaskJS(phoneFeedback, maskOptions);
 })();

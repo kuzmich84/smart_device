@@ -5169,5 +5169,5 @@
 
   })));
 //# sourceMappingURL=imask.js.map
-  window.imaskJS = Imask;
+  window.imaskJS = IMask;
 })();
