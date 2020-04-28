@@ -2,6 +2,10 @@
   background-color: #1b2d37;
 }
 
+.products img {
+  background-color: #ffffff;
+}
+
 .products h2 {
   @include set-Roboto-Condensed();
   font-style: normal;

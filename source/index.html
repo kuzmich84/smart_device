@@ -14,18 +14,6 @@
   <link href="pixelPerfect/pixel-glass/styles.css" rel="stylesheet">
   <link href="pixelPerfect/index.css" rel="stylesheet">
   <script src="pixelPerfect/pixel-glass/script.js"></script>
-  <!--   // Picturefill -->
-  <!--  <script>-->
-  <!--    // Picture element HTML5 shiv-->
-  <!--    document.createElement("picture");-->
-  <!--  </script>-->
-  <!--  <script src="js/picturefill.min.js" async=""></script>-->
-  <!--  &lt;!&ndash; // Picturefill &ndash;&gt;-->
-  <!--  &lt;!&ndash; // Polyfill &ndash;&gt;-->
-  <!--&lt;!&ndash;  <script src="js/svg4everybody.min.js"></script>&ndash;&gt;-->
-  <!--&lt;!&ndash;  <script>svg4everybody(); // run it now or whenever you are ready</script>&ndash;&gt;-->
-  <!--&lt;!&ndash;  &lt;!&ndash; // Polyfill &ndash;&gt;&ndash;&gt;-->
-  <!--&lt;!&ndash;  <link rel="stylesheet" href="css/style.min.css">&ndash;&gt;-->
 </head>
 <body class="body">
 <div style="display: none;">
@@ -35,14 +23,13 @@
   <nav class="main-nav">
     <div class="main-nav__logo logo">
       <a class="logo__link">
-        <svg width="52" height="52">
+        <svg width="202" height="52">
+          <use xlink:href="#icon-logo-desktop"></use>
+        </svg>
+        <svg width="38" height="38">
           <use xlink:href="#icon-logo"></use>
         </svg>
       </a>
-      <div class="logo__desc">
-        <h2>Smart Device</h2>
-        <p>умные технологии</p>
-      </div>
     </div>
     <div class="main-nav__contact contact-header">
       <a class="contact-header__link contact-header__link--mail" href="mailto:info@sd.ru"><span>info@sd.ru</span></a>
@@ -59,8 +46,11 @@
       </div>
       <div class="site-description__banner">
         <picture>
+          <!-- 1x: 294px; 2x 588px -->
           <source media="(max-width: 767px)" srcset="img/circuit-mobile@1x.webp 1x, img/circuit-mobile@2x.webp 2x " type="image/webp">
+          <!-- 1x: 465px; 2x 930px -->
           <source media="(max-width: 1023px)" srcset="img/circuit-tablet@1x.webp 1x, img/circuit-tablet@2x.webp 2x" type="image/webp">
+          <!-- 1x: 705px; 2x 1410px -->
           <source srcset="img/circuit-desktop@1x.webp 1x, img/circuit-desktop@2x.webp 2x " type="image/webp">
           <img src="img/circuit-desktop@1x.png" srcset="img/circuit-desktop@2x.png 2x" width="705" height="515" alt="Печатная плата">
         </picture>
@@ -128,8 +118,11 @@
         <a class="products__link" data-product="Производство &#10;печатных плат" href="#">
           <div class="products__arrow"></div>
           <picture>
+            <!-- 1x: 290px; 2x 580px -->
             <source media="(max-width: 767px)" srcset="img/product-1-mobile@1x.webp 1x, img/product-1-mobile@2x.webp 2x " type="image/webp">
+            <!-- 1x: 715px; 2x 1430px -->
             <source media="(max-width: 1023px)" srcset="img/product-1-tablet@1x.webp 1x, img/product-1-tablet@2x.webp 2x " type="image/webp">
+            <!-- 1x: 740px; 2x 1480px -->
             <source srcset="img/product-1-desktop@1x.webp 1x, img/product-1-desktop@2x.webp 2x " type="image/webp">
             <img src="img/product-1-desktop@1x.jpg" srcset="img/product-1-desktop@2x.jpg 2x" width="370" height="620" alt="Производство  печатных плат">
           </picture>
@@ -137,19 +130,25 @@
         <a class="products__link" data-product="Монтаж печатных &#10;плат" href="#">
           <div class="products__arrow"></div>
           <picture>
+            <!-- 1x: 290px; 2x 580px -->
             <source media="(max-width: 767px)" srcset="img/product-2-mobile@1x.webp 1x, img/product-2-mobile@2x.webp 2x " type="image/webp">
+            <!-- 1x: 715px; 2x 1430px -->
             <source media="(max-width: 1023px)" srcset="img/product-2-tablet@1x.webp 1x, img/product-2-tablet@2x.webp 2x " type="image/webp">
+            <!-- 1x: 740px; 2x 1480px -->
             <source srcset="img/product-2-desktop@1x.webp 1x, img/product-2-desktop@1x.webp 2x " type="image/webp">
-            <img src="img/product-2-desktop@1x.jpg" srcset="img/product-2-desktop@2x.jpg 2x" width="370" height="620" alt="Производство  печатных плат">
+            <img src="img/product-2-desktop@1x.jpg" srcset="img/product-2-desktop@2x.jpg 2x" width="370" height="620" alt="Монтаж печатных плат">
           </picture>
         </a>
         <a class="products__link" data-product="Комплектующие &#10;для светотехники" href="#">
           <div class="products__arrow"></div>
           <picture>
+            <!-- 1x: 290px; 2x 580px -->
             <source media="(max-width: 767px)" srcset="img/product-3-mobile@1x.webp 1x, img/product-3-mobile@2x.webp 2x " type="image/webp">
+            <!-- 1x: 715px; 2x 1430px -->
             <source media="(max-width: 1023px)" srcset="img/product-3-tablet@1x.webp 1x, img/product-3-tablet@2x.webp 2x " type="image/webp">
+            <!-- 1x: 740px; 2x 1480px -->
             <source srcset="img/product-3-desktop@1x.webp 1x, img/product-3-desktop@1x.webp 2x " type="image/webp">
-            <img src="img/product-3-desktop@1x.jpg" srcset="img/product-3-desktop@2x.jpg 2x" width="370" height="620" alt="Производство  печатных плат">
+            <img src="img/product-3-desktop@1x.jpg" srcset="img/product-3-desktop@2x.jpg 2x" width="370" height="620" alt="Комплектующие для светотехники">
           </picture>
         </a>
       </div>
@@ -162,9 +161,11 @@
         <h3>Остались вопросы? Задайте их нам!</h3>
         <p>Мы проконсультируем Вас бесплатно</p>
         <form class="form" action="#" method="post">
-          <label class="visually-hidden" for="name"> </label> <input class="feedback__input feedback__input--name" id="name" name="name" type="text" placeholder="Имя" required>
-          <label class="visually-hidden" for="phone"></label> <input class="feedback__input feedback__input--phone" id="phone" name="phone" type="tel" placeholder="Телефон" pattern="[+]7[0-9]{10,}" required>
-          <textarea name="message" id="message" placeholder="Ваш вопрос" required></textarea>
+          <label class="visually-hidden" for="name"></label>
+          <input class="form__input feedback__input feedback__input--name" id="name" name="name" type="text" placeholder="Имя" required>
+          <label class="visually-hidden" for="phone"></label>
+          <input class="form__input feedback__input feedback__input--phone" id="phone" name="phone" type="tel" placeholder="Телефон" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+          <textarea class="form__textarea" name="message" id="message" placeholder="Ваш вопрос" required></textarea>
           <div class="feedback__submit form-submit">
             <button class="btn form__btn" type="submit">Задать вопрос</button>
             <label><input class="form__checkbox" type="checkbox" name="confidential" checked>
@@ -184,14 +185,10 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo logo logo-footer">
           <a class="logo__link">
-            <svg width="52" height="52">
-              <use xlink:href="#icon-logo"></use>
+            <svg width="216" height="52">
+              <use xlink:href="#icon-logo-footer"></use>
             </svg>
           </a>
-          <div class="logo-footer__desc logo__desc">
-            <h2>Service Device</h2>
-            <p>умные технологии</p>
-          </div>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -269,9 +266,11 @@
     <h2>Закажите звонок</h2>
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="form" action="#" method="post">
-      <label class="visually-hidden" for="name"> </label> <input class="call-popup__input" id="call-name" name="name" type="text" placeholder="Имя" required>
-      <label class="visually-hidden" for="phone"></label> <input class="call-popup__input" id="call-phone" name="phone" type="tel" placeholder="Телефон" pattern="[+]7[0-9]{10,}" required>
-      <textarea name="message" id="call-message" placeholder="Ваш вопрос" required></textarea>
+      <label class="visually-hidden" for="name"></label>
+      <input class="form__input call-popup__input" id="call-name" name="name" type="text" placeholder="Имя" required>
+      <label class="visually-hidden" for="phone"></label>
+      <input class="form__input call-popup__input" id="call-phone" name="phone" type="tel" placeholder="Телефон" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+      <textarea class="form__textarea" name="message" id="call-message" placeholder="Ваш вопрос" required></textarea>
       <div class="call-popup__submit form-submit">
         <button class="btn form__btn" type="submit">Отправить</button>
         <label class="call-popup__label"><input class="form__checkbox" type="checkbox" name="confidential" required checked>

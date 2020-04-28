@@ -30,14 +30,29 @@
   padding-right: 15px;
 }
 
+.page-header svg:last-child {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+
+}
+
+
 @media (max-width: $mobile-width) {
-  .logo__link svg {
+
+  .logo__desc {
+    display: none;
+  }
+
+  .page-header svg:last-child {
+    display: block;
     padding-right: 15px;
     width: 38px;
     height: 38px;
   }
 
-  .logo__desc {
+  .page-header svg:first-child {
     display: none;
   }
 }
