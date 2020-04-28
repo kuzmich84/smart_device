@@ -53,11 +53,11 @@
   }
 
   &::after {
+    @include set-Roboto-Condensed();
     content: attr(data-product);
     position: absolute;
     top: 0;
     left: 0;
-    @include set-Roboto-Condensed();
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -149,6 +149,7 @@
     padding-top: 33px;
     padding-right: 15px;
     padding-left: 15px;
+    padding-bottom: 33px;
   }
 
   .products__link {
@@ -158,9 +159,5 @@
       padding-top: 19px;
       padding-left: 35px;
     }
-  }
-
-  .products__container {
-    padding-bottom: 33px;
   }
 }

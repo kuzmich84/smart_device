@@ -15,29 +15,31 @@ var svgstore = require('gulp-svgstore');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
+var jsmin = require('gulp-jsmin');
+
 
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
-      .pipe(plumber())
-      .pipe(sourcemap.init())
-      .pipe(sass())
-      .pipe(postcss([autoprefixer()]))
-      .pipe(csso())
-      .pipe(rename('style.min.css'))
-      .pipe(sourcemap.write('.'))
-      .pipe(gulp.dest('build/css'))
-      .pipe(server.stream());
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(csso())
+    .pipe(rename('style.min.css'))
+    .pipe(sourcemap.write('.'))
+    .pipe(gulp.dest('build/css'))
+    .pipe(server.stream());
 });
 
 gulp.task('style', function () {
   return gulp.src('source/sass/style.scss')
-      .pipe(plumber())
-      .pipe(sourcemap.init())
-      .pipe(sass())
-      .pipe(postcss([autoprefixer()]))
-      .pipe(rename('style.css'))
-      .pipe(gulp.dest('build/css'))
-      .pipe(server.stream());
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(rename('style.css'))
+    .pipe(gulp.dest('build/css'))
+    .pipe(server.stream());
 });
 
 gulp.task('server', function () {
@@ -72,7 +74,7 @@ gulp.task('images', function () {
 
 gulp.task('webp', function () {
   return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(webp({quality: 90}))
+    .pipe(webp({quality: 70}))
     .pipe(gulp.dest('source/img'));
 });
 
@@ -96,7 +98,7 @@ gulp.task('copy', function () {
   return gulp.src([
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
-    'source/js/**',
+    'source/js/main.js',
     'source//*.ico',
   ], {
     base: 'source',
@@ -114,5 +116,13 @@ gulp.task('pixelGlass', function () {
 });
 
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'style', 'sprite', 'html', 'pixelGlass'));
+gulp.task('js', function () {
+  return gulp.src('source/js/vendor.js')
+    .pipe(jsmin())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('build/js'));
+});
+
+
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js', 'pixelGlass'));
 gulp.task('start', gulp.series('build', 'server'));

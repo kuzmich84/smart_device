@@ -1,8 +1,8 @@
 .form {
+  @include set-PT-Mono();
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  @include set-PT-Mono();
   color: #ffffff;
   font-size: 16px;
   line-height: 22px;
@@ -103,11 +103,6 @@
   .feedback input {
     padding: 12px 14px 16px 20px;
     min-height: 52px;
-  }
-
-  .feedback textarea {
-    min-height: 162px;
-    margin-bottom: 43px;
   }
 
   .form__btn {
