@@ -11,7 +11,11 @@
   display: flex;
 }
 
-.page-header svg:last-child {
+.main-nav .logo__link {
+  margin-right: 20px;
+}
+
+.logo-header svg:last-child {
   display: none;
 }
 
@@ -23,7 +27,7 @@
     height: 38px;
   }
 
-  .page-header svg:first-child {
+  .logo-header svg:first-child {
     display: none;
   }
 }

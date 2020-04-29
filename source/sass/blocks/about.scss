@@ -46,6 +46,12 @@
     color: #ffffff;
     background-color: #00b2ff;
   }
+
+  &:focus {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #00b2ff;
+  }
 }
 
 .about__content {
@@ -138,12 +144,12 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .webp .about__content::before {
       background-image: url("../img/about-2005-tablet@2x.webp");
-      background-size: 220px;
+      background-size: 244px;
     }
 
     .no-webp .about__content::before {
       background-image: url("../img/about-2005-tablet@2x.png");
-      background-size: 220px;
+      background-size: 244px;
     }
 
     .no-js .about__content::before {

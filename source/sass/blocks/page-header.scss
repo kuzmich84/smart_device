@@ -49,6 +49,12 @@
   &:hover {
     opacity: 1;
     cursor: pointer;
+    outline: 0;
+  }
+
+  &:focus {
+    outline: 0;
+    opacity: 1;
   }
 }
 

@@ -10,8 +10,13 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   background-color: transparent;
+  outline: none;
 
   &:hover {
     cursor: pointer;
+  }
+
+  &:focus {
+    opacity: 0.5;
   }
 }

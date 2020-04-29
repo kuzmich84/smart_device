@@ -23,13 +23,13 @@
   padding-left: 23px;
   padding-right: 23px;
   padding-top: 87px;
-  padding-bottom: 123px;
+  padding-bottom: 103px;
 }
 
 .products__list {
   @include reset-ul();
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 
@@ -40,6 +40,7 @@
   max-width: 370px;
   position: relative;
   opacity: 1;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -94,6 +95,17 @@
 .products__link:hover::before {
   background-color: rgba(27, 45, 55, 0.9);
   cursor: pointer;
+}
+
+.products__link:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
+.products__link:focus::before {
+  background-color: rgba(27, 45, 55, 0.9);
+  cursor: pointer;
+  outline: none;
 }
 
 @media (max-width: $tablet-width) {

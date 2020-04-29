@@ -1,6 +1,9 @@
 .btn-header {
   color: #ffffff;
-  padding: 14px 27px 12px;
+  min-width: 181px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  align-self: center;
 
   &:hover {
     cursor: pointer;

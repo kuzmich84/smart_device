@@ -15,3 +15,8 @@
 .social__item:last-child {
   margin-right: 0;
 }
+
+.social__link:focus {
+  outline: none;
+  opacity: 0.5;
+}

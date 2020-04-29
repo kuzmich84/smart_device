@@ -17,6 +17,11 @@
   &:hover {
     opacity: 1;
   }
+
+  &:focus {
+    opacity: 1;
+    outline: none;
+  }
 }
 
 @media (max-width: $tablet-width) {

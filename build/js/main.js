@@ -137,12 +137,22 @@
   // аккордеон
 
   var footerBtn = document.querySelectorAll('.page-footer__btn-wrapper');
-  for (var i = 0; i < footerBtn.length; i++) {
-    footerBtn[i].addEventListener('click', function () {
-      var footerNav = this.parentElement;
-      footerNav.classList.toggle('nav-footer-active');
+  var activePanel;
+
+  footerBtn.__proto__.forEach = [].__proto__.forEach;
+  footerBtn.forEach(function(item, i, footerBtn) {
+    item.addEventListener('click', function () {
+      // show new thingy;
+      this.parentElement.classList.add('nav-footer-active');
+
+      // hide old thingy
+      if (activePanel) {
+        activePanel.parentElement.classList.remove('nav-footer-active');
+      }
+      // update thingy
+      activePanel = (activePanel === this) ? 0 : this;
     });
-  }
+  });
 
   var phoneFeedback = document.querySelector('#phone');
 

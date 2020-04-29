@@ -1,7 +1,10 @@
 .contact-header {
+  @include reset-ul();
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: 50px;
+  justify-content: flex-end;
 }
 
 .contact-header__link {
@@ -9,40 +12,28 @@
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-
+  display: flex;
+  align-items: center;
 
   &:hover {
     cursor: pointer;
     opacity: 0.6;
   }
-}
 
-.contact-header__link--mail {
-  position: relative;
-  margin-right: 122px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../img/icon-mail.svg") no-repeat;
-    width: 19px;
-    height: 14px;
-    left: -37px;
+  &:focus {
+    outline: none;
+    opacity: 0.6;
   }
 }
 
-.contact-header__link--phone {
-  position: relative;
-  margin-right: 50px;
+.contact-header__link svg {
+  margin-right: 20px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../img/icon-phone.svg") no-repeat;
-    width: 18px;
-    height: 18px;
-    left: -33px;
-  }
+.contact-header__item {
+  margin-left: 8px;
+  width: 211px;
+  margin-top: 17px;
 }
 
 @media (max-width: $tablet-width) {
@@ -50,23 +41,34 @@
     display: none;
   }
 
-  .contact-header__link--mail {
-    &::before {
-      width: 25.33px;
-      height: 18.67px;
-      top: -12px;
-      left: 90px;
-    }
+  .contact-header {
+    margin: 0;
+    padding-top: 11px;
   }
 
-  .contact-header__link--phone {
-    &::before {
-      width: 24px;
-      height: 24px;
-      top: -14px;
-      left: 27px;
-    }
+  .contact-header__link--mail svg {
+    width: 25.33px;
+    height: 23.67px;
+    display: block;
   }
+
+  .contact-header__link--phone svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  .contact-header__item {
+    margin-top: 0;
+    margin-left: 32px;
+    width: auto;
+    align-items: center;
+  }
+
+  .contact-header__link svg {
+    margin-right: 0;
+  }
+
 }
 
 @media (max-width: $mobile-width) {
@@ -75,5 +77,13 @@
       top: -11px;
       left: 102px;
     }
+  }
+
+  .contact-header {
+    padding-top: 5px;
+  }
+
+  .contact-header__item {
+    margin-left: 21px;
   }
 }
