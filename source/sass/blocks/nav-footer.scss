@@ -31,6 +31,10 @@
     margin-bottom: 22px;
   }
 
+  .no-js .nav-footer__list {
+    display: block;
+  }
+
   .nav-footer-active .nav-footer__list {
     display: block;
   }
