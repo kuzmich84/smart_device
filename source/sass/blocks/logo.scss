@@ -1,14 +1,14 @@
 .logo {
   display: flex;
   align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .logo__link {
   display: flex;
-}
-
-.logo__link svg {
-  padding-right: 15px;
 }
 
 .page-header svg:last-child {

@@ -1,7 +1,6 @@
 .form {
   @include set-PT-Mono();
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   color: #ffffff;
   font-size: 16px;
@@ -27,6 +26,10 @@
   &:focus {
     border: 1px solid #ffffff;
   }
+}
+
+.feedback input[id="name"] {
+  margin-right: 5%;
 }
 
 .form textarea::placeholder,
@@ -100,6 +103,10 @@
     padding-bottom: 17px;
   }
 
+  .feedback input[id="name"] {
+    margin-right: 3.8%;
+  }
+
   .feedback input {
     padding: 12px 14px 16px 20px;
     min-height: 52px;
@@ -149,5 +156,9 @@
   .form__custom-checkbox {
     margin-top: 1px;
     margin-left: -34px;
+  }
+
+  .feedback input[id="name"] {
+    margin-right: 0;
   }
 }
